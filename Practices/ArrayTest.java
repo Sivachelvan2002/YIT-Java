@@ -1,6 +1,5 @@
 import java.util.Scanner;
-
-class ArrayLoop{
+class ArrayTest{
 	public static void main(String args[]){
 		double marksArray[]=new double[5];
 		double total=0.0;
@@ -16,9 +15,8 @@ class ArrayLoop{
 				positiveNumber=scan.nextDouble();
 				
 				if(positiveNumber>=0){
+					//for(int j=0;j<marksArray.length;j++){
 						marksArray[i]=positiveNumber;
-						total+=marksArray[i];
-						   
 					
 				}
 				else{
@@ -31,12 +29,13 @@ class ArrayLoop{
 				i--;
 				scan.next();
 			}
-			
-			
 		}
-		for(int k=0;k<marksArray.length;k++){
+			for(int k=0;k<marksArray.length;k++){
 		    System.out.println("your marks 0" +(k+1)+ " is "+(marksArray[k]));
+			total+=marksArray[k];
 		}
+			
+		
 			
 					
 		
@@ -59,5 +58,12 @@ class ArrayLoop{
 		
 	}
 }
-		
-		
+
+
+
+
+
+
+
+
+
