@@ -5,13 +5,44 @@ class StudentArray{
 		int NumberOfStudents=0;
 		int NumberOfCourses=0;
 		double Total=0.0;
+		int NumberOfStudentsValidCheck=0;
+		int MarksValidCheck=0;
 		
-		
-		System.out.print("Enter NumberofStudents : ");
-		NumberOfStudents=scan.nextInt();
-		
-		System.out.print("Enter NumberOfCourses : ");
-		NumberOfCourses=scan.nextInt();
+		while(true){
+			System.out.print("Enter NumberofStudents : ");
+		    if(scan.hasNextInt()){
+				NumberOfStudentsValidCheck=scan.nextInt();
+				if(NumberOfStudentsValidCheck>0){
+					NumberOfStudents=NumberOfStudentsValidCheck;
+					break;
+				}
+				else{
+					System.out.println("Invalid input please Enter positive Number");
+				}
+			else{
+				System.out.println("Invalid input please Enter Numeric value");
+				scan.next();
+			}
+					
+		while(true){
+			System.out.print("Enter NumberOfCourses : ");
+			if(scan.hasNextInt()){
+				NumberOfStudentsValidCheck=scan.nextInt();
+				if((NumberOfStudentsValidCheck>0)&&(NumberOfStudentsValidCheck<=100)){
+					NumberOfCourses=NumberOfStudentsValidCheck;
+					break;
+				}
+				else{
+					System.out.println("Invalid Input please enter positive number!");
+				}
+			}
+			else{
+				System.out.println("Invalid input please enter numeric value!");
+				scan.next();
+			}
+		}
+				
+		//NumberOfCourses=scan.nextInt();
 		
 		int StudentArray[][]=new int[NumberOfStudents][NumberOfCourses];
 		String StudentName[]=new String[NumberOfStudents];
@@ -26,14 +57,27 @@ class StudentArray{
 			int j=0;
 			while(j<NumberOfCourses){
 				System.out.print("Enter Your mark 0"+(j+1)+" : ");
-				StudentArray[i][j]=scan.nextInt();
-				Total+=StudentArray[i][j];
+				while(true){
+					if(scan.NextInt()){
+						NumberOfStudentsValidCheck=scan.nextInt();
+						if(NumberOfStudentsValidCheck>0){
+							StudentArray[i][j]=NumberOfStudentsValidCheck;
+							break;
+						}
+						else{
+							System.out.println("Invalid input please enter positive number!");
+						}
+					}
+					else{
+						System.out.println("Invalid input please enter numeric value!");
+						scan.next();
+					}
+				}
+				StudentTotal[i]+=StudentArray[i][j];
 				j++;
 				
 			}
-			StudentTotal[i]=Total;
 			
-			Total=0.0;
 		}
 		System.out.println("");
 		System.out.println("*******************************");
