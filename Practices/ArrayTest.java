@@ -15,7 +15,7 @@ class ArrayTest{
 				positiveNumber=scan.nextDouble();
 				
 				if(positiveNumber>=0){
-					//for(int j=0;j<marksArray.length;j++){
+				
 						marksArray[i]=positiveNumber;
 					
 				}
