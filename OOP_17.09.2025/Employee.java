@@ -25,6 +25,7 @@ class Employee{
 		System.out.println("Id : "+id);
 		System.out.println("Name : "+name);
 		System.out.println("Basic Salary : "+basic_salary);
+		System.out.println("Bonus : "+bonus);
 		System.out.println("Total Salary : "+total_salary);
 	}
 }
