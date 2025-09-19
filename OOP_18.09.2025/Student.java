@@ -8,9 +8,9 @@ class Student{
 	double average;
 	char result;
 	
-	Student(){
-		this.id=001;
-		this.name="Selvan";
+	Student(int id,String name){
+		this.id=id;
+		this.name=name;
 	}
 	
 	void setStudent(int marks1,int marks2,int marks3){
@@ -46,14 +46,14 @@ class Student{
 	}
 	
 	void Display(){
-		System.out.println("Id : "+id);
-		System.out.println("Name : "+name);
-		System.out.println("Mark 01 : "+marks1);
-		System.out.println("Mark 02 : "+marks2);
-		System.out.println("Mark 03 : "+marks3);
-		System.out.println("Total : "+total);
-		System.out.println("Average : "+average);
-		System.out.println("Result : "+result);
+		System.out.println("Id : "+this.id);
+		System.out.println("Name : "+this.name);
+		System.out.println("Mark 01 : "+this.marks1);
+		System.out.println("Mark 02 : "+this.marks2);
+		System.out.println("Mark 03 : "+this.marks3);
+		System.out.println("Total : "+this.total);
+		System.out.println("Average : "+this.average);
+		System.out.println("Result : "+this.result);
 	}
 		
 	
