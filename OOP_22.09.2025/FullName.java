@@ -7,8 +7,9 @@ class FullName{
 		this.lname=lname;
 	}
 	
-	void getFullName(){
-		System.out.println(this.fname+" "+this.lname);
+	String getFullName(){
+		//System.out.println(this.fname+" "+this.lname);
+		return this.fname+" "+this.lname;
 	}
 }
 
