@@ -1,10 +1,10 @@
-class Student{
+class StudentPc{
 	int id;
 	String name;
 	
-	Student(){  //default constructor
-		this.id=100;
-		this.name="selvan";
+	StudentPc(int id,String name){     //parameter constructor
+		this.id=id;
+		this.name=name;
 	}
 	
 	void getStudent(){
@@ -12,5 +12,5 @@ class Student{
 		System.out.println("Name : "+this.name);
 	}
 }
-
+		
 		
