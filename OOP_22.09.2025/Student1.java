@@ -57,8 +57,8 @@ class Student1{
 		char result=this.getResult(avg);
 		
 		System.out.println("Total : "+tot);
-		System.out.println("Total : "+avg);
-		System.out.println("Total : "+result);
+		System.out.println("Average : "+avg);
+		System.out.println("Result : "+result);
 		
 	}
 }
