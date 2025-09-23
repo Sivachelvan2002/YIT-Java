@@ -17,28 +17,26 @@ class Student1{
 	}
 	
 	int calcTotal(){
-		int total=this.marks1+this.marks2+this.marks3;
-		return total;
+		return this.marks1+this.marks2+this.marks3;
 		
 	}
 	
-	double calcAverage(){
-		double average=this.calcTotal()/3;
+	double calcAverage(int total){
+		double average=total/3;
 		return average;
 	}
 	
-	char getResult(){
-		double result=this.calcAverage();
-		if(result>=75){
+	char getResult(double average){
+		if(average>=75){
 			return 'A';
 		}
-		else if(result>=65){
+		else if(average>=65){
 			return 'B';
 		}
-		else if(result>=50){
+		else if(average>=50){
 			return 'C';
 		}
-		else if(result>=35){
+		else if(average>=35){
 			return 'S';
 		}
 		else{
@@ -54,10 +52,13 @@ class Student1{
 		System.out.println("Marks 01: "+this.marks1);
 		System.out.println("Marks 02: "+this.marks2);
 		System.out.println("Marks 03: "+this.marks3);
+		int tot=this.calcTotal();
+		double avg=this.calcAverage(tot);
+		char result=this.getResult(avg);
 		
-		System.out.println("Total : "+this.calcTotal());
-		System.out.println("Total : "+this.calcAverage());
-		System.out.println("Total : "+this.getResult());
+		System.out.println("Total : "+tot);
+		System.out.println("Total : "+avg);
+		System.out.println("Total : "+result);
 		
 	}
 }
