@@ -1,11 +1,11 @@
-class B1 extends A1{
+class B5 extends A5{
 	int y;
-	B1(int y){
+	B5(int y,int x){
+		super(x);
 		this.y=y;
-		super(20);
 	}
 	
-	void getY(){
+	void gety(){
 		System.out.println("BY : "+this.y);
 	}
 }
