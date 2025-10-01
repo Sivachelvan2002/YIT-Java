@@ -7,6 +7,7 @@ public class B extends A{
 	}
 	public void gety(){
 		System.out.println("BY : "+this.y);
+		super.getx();
 	}
 }
 
