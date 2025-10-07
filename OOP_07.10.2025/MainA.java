@@ -1,6 +1,7 @@
 class MainA{
 	public static void main(String args[]){
 		A obja=new A();
-		obja.getx();
+		// obja.X=70;
+		obja.getX();
 	}
 }

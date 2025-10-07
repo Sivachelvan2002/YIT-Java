@@ -52,7 +52,7 @@ public class Student1{
 		System.out.println("Marks 01: "+this.marks1);
 		System.out.println("Marks 02: "+this.marks2);
 		System.out.println("Marks 03: "+this.marks3);
-		int tot=this.calcTotal();
+		int tot=this.calcTotal();//ithukku munnala modifiers kudukkelathu oru local variable ku munnala ondum kudukkelathu. local variable enda athu method kulla elutura variable.
 		double avg=this.calcAverage(tot);
 		char result=this.getResult(avg);
 		

@@ -1,9 +1,11 @@
 final class A{
-	final int x;
+	static final int X=20;
 	A(){
-		this.x=20;
+		//X=20;
 	}
-	final void getx(){
-		System.out.println("Ax : "+this.x);
+	final void getX(){
+		final int X=40;
+		System.out.println("Ax : "+this.X);
+		System.out.println("Ax : "+X);
 	}
 }
