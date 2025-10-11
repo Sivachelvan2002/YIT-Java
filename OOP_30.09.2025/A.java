@@ -5,6 +5,8 @@ class A{
 	}
 	
 	void getx(){
+		int y=40;
 		System.out.println("AX : "+this.x);
+		System.out.println("AX : "+y);
 	}
 }

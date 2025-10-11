@@ -1,5 +1,5 @@
 final class A{
-	static final int X=20;
+	static int X=20;
 	A(){
 		//X=20;
 	}
